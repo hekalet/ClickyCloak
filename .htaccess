@@ -1,0 +1,2 @@
+DirectoryIndex /starthere.html
+ErrorDocument 404 /starthere.html
