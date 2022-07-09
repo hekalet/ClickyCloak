@@ -9,31 +9,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
-  * {
-   margin: 0;
-   padding: 0;
-   background-color: black;
-   font-family: "Lucida Console", monospace;
-   font-family: "Helvetica", "Roboto" sans-serif;
- }
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Helvetica, Roboto, sans-serif;
+}
 
- body {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #0;
 }
+
 .container {
   position: relative;
   width: 300px;
   height: 200px;
   margin: 40px;
-  border-radius: 16px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container::before {
   content: "";
   position: absolute;
@@ -41,15 +41,17 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  filter: blur(16px);
-  transform: translateY(0px, 35px) scale(2);
+  filter: blur(30px);
+  transform: translateY(0px, 35px) scale(0.9);
 }
+
 .container h1 {
   position: relative;
-  font-size: 5em;
+  font-size: 7em;
   color: white;
   background-color: transparent;
 }
+
 .container:nth-child(1),
 .container:nth-child(1)::before {
   background: linear-gradient(135deg, #f403d1, #64b5f6);
