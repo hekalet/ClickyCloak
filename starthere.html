@@ -8,25 +8,22 @@
 	<meta name="keywords" content="Education, Learning, MathHelp"></meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<style> 
+<style>
   * {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  font-family: "Helvetica", "Roboto", sans-serif;
-}
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   font-family: "Lucida Console", monospace;
+   font-family: "Helvetica", "Roboto" sans-serif;
+ }
 
-body {
+ body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: #0;
-  font-family: "Helvetica", "Roboto", sans-serif;
 }
-h1 {
-     font-family: "Helvetica", "Roboto", sans-serif; 
-   }
 .container {
   position: relative;
   width: 300px;
@@ -37,7 +34,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
 .container::before {
   content: "";
   position: absolute;
@@ -48,14 +44,12 @@ h1 {
   filter: blur(16px);
   transform: translateY(0px, 35px) scale(2);
 }
-
 .container h1 {
   position: relative;
   font-size: 5em;
   color: white;
   background-color: transparent;
 }
-
 .container:nth-child(1),
 .container:nth-child(1)::before {
   background: linear-gradient(135deg, #f403d1, #64b5f6);
