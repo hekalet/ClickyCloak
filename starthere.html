@@ -2,11 +2,11 @@
 <!-- I will probably make ClickyCloak a Tauri (electron is bloat) web-application in the near future.
  But I dunno. Maybe. -->
 <style>
-* {
+  * {
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: Helvetica, sans-serif;
+  font-family: "Lucida Console", monospace;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #0;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
   width: 300px;
   height: 200px;
   margin: 40px;
-  border-radius: 45px;
+  border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,13 +35,13 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  filter: blur(45px);
-  transform: translateY(0px, 35px) scale(1.7);
+  filter: blur(16px);
+  transform: translateY(0px, 35px) scale(2);
 }
 
 .container h1 {
   position: relative;
-  font-size: 7em;
+  font-size: 5em;
   color: white;
   background-color: transparent;
 }
@@ -51,8 +52,7 @@ body {
 }
 </style>
 <body>
-<title>Google</title>
-<div class="container">
+  <div class="container">
   <h1>ClickyCloak</h1>
 </div>
 </body>
